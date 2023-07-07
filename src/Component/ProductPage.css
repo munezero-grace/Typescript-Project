@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.product-holder {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px 40px;
+    position: relative;
+  }
+  .title{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+
+
+  }
+
+
+  .box-filter{
+   left: 4%;
+   position: absolute;
+    width:6%;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+
+  }
+
+  
+  .box-sort{
+    position: absolute;
+    right: 5%;
+    width:6%;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+    
+  }
+
+  .icon{
+    font-size: 30px;
+    color: cornflowerblue;
+  }
+
+  .icon:hover{
+color: rgb(18, 67, 158);
+  }
+
+
+  .product {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    border: 1px solid rgb(6, 28, 69);
+
+  
+  }
+  .product:hover{
+    cursor: pointer;
+    transition: .3s ease;
+    border: 2px solid grey;
+  }
+  .product img {
+    width: 90%;
+    height: 180px;
+    object-fit: cover;
+  }
+  .product h3 {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .product p {
+    margin-top: 10px;
+    font-size: 11px;
+    color: gray;
+    text-align: start;
+    line-height: 1.4;
+  }
+  .product p:last-child {
+    color: rgb(39, 39, 39);
+    text-align: start;
+    font-size: 14px;
+    font-weight: bolder;
+  }
+  
+  .products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    
+  
+  }
+  .products img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+   
+  }
+  .products h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .products p {
+    margin-bottom: 5px;
+  }
+  .products .quantity {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  .products .quantity button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border: none;
+    background-color: #F2F2F2;
+    cursor: pointer;
+  }
+  .products .quantity .quantity-value {
+    margin: 0 10px;
+  }
+  .products .delete-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: #FF5252;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+
+
+
+
+
+
+.cartpage{
+  text-align: center;
+  color: cornflowerblue;
+  padding: 10px;
+  text-decoration: solid double;
+}
+
+
+
+.btn{
+  background-color: rgb(8, 173, 250);
+ 
+}
+
+
+.btn:hover{
+  background-color: rgb(11, 79, 110);
+}
+
+  @media (min-width: 176px) {
+    .product-holder {
+      grid-template-columns: repeat(1, 1fr);
+      
+    }
+
+    
+  .box-filter{
+    left: 4%;
+    position: absolute;
+     width:10%;
+     height: 30px;
+     border: 1px solid black;
+     text-align: center;
+ 
+   }
+ 
+   
+   .box-sort{
+     position: absolute;
+     right: 5%;
+     width:10%;
+     height: 30px;
+     border: 1px solid black;
+     text-align: center;
+     
+   }
+  }
+  @media (min-width: 326px) {
+    .product-holder {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .box-filter{
+      left: 4%;
+      position: absolute;
+       width:10%;
+       height: 30px;
+       border: 1px solid black;
+       text-align: center;
+   
+     }
+   
+     
+     .box-sort{
+       position: absolute;
+       right: 5%;
+       width:10%;
+       height: 30px;
+       border: 1px solid black;
+       text-align: center;
+       
+     }
+  }
+  @media (min-width: 576px) {
+    .product-holder {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .box-filter{
+      left: 4%;
+      position: absolute;
+       width:10%;
+       height: 30px;
+       border: 1px solid black;
+       text-align: center;
+   
+     }
+   
+     
+     .box-sort{
+       position: absolute;
+       right: 5%;
+       width:10%;
+       height: 30px;
+       border: 1px solid black;
+       text-align: center;
+       
+     }
+  }
+  @media (min-width: 768px) {
+    .product-holder {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .box-filter{
+      left: 4%;
+      position: absolute;
+       width:10%;
+       height: 30px;
+       border: 1px solid black;
+       text-align: center;
+   
+     }
+   
+     
+     .box-sort{
+       position: absolute;
+       right: 5%;
+       width:10%;
+       height: 30px;
+       border: 1px solid black;
+       text-align: center;
+       
+     }
+  }
+  @media (min-width: 992px) {
+    .product-holder {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
